@@ -1,3 +1,4 @@
+import AboutSevenSpikes from '@/components/sections/about-seven-spikes';
 import BenefitsGrid from '@/components/sections/benefits-grid';
 import TestimonialsSection from '@/components/sections/client-testimonial';
 import FaqAccordion from '@/components/sections/faq-accordion';
@@ -10,6 +11,7 @@ export default async function Home() {
   return (
     <>
       <HeroSection />
+      <AboutSevenSpikes />
       <CoreFeatures />
       <ToolsTab />
       <BenefitsGrid />

@@ -341,7 +341,7 @@ export default function Footer() {
         <div className="container relative z-10 px-5 mx-auto sm:px-7">
           <div className="py-5 text-center">
             <p className="text-sm text-gray-500">
-              &copy; {getCurrentYear()} AiStarterKit - All Rights Reserved.
+              &copy; {getCurrentYear()} Seven Spikes - All Rights Reserved.
             </p>
           </div>
         </div>
