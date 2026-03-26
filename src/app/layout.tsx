@@ -3,6 +3,7 @@ import { ThemeProvider } from 'next-themes';
 import { Onest } from 'next/font/google';
 import './globals.css';
 import { ToasterProvider } from './providers/toaster';
+import { Analytics } from "@vercel/analytics/next"
 
 const onest = Onest({
   subsets: ['latin'],
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body
         className={`bg-gray-50 dark:bg-dark-secondary min-h-screen flex flex-col ${onest.className}`}
       >
+         <Analytics />
         <ThemeProvider disableTransitionOnChange>
           {/* ToasterProvider must render before the children components */}
           {/* https://github.com/emilkowalski/sonner/issues/168#issuecomment-1773734618 */}
