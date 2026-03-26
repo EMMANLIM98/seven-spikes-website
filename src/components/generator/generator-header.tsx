@@ -39,14 +39,14 @@ export default function GeneratorHeader({
                     className="block dark:hidden"
                     width={180}
                     height={30}
-                    alt="AiStarterKit Logo"
+                    alt="Seven Spikes Logo"
                   />
                   <Image
                     src="/images/logo-white.svg"
                     className="hidden dark:block"
                     width={180}
                     height={30}
-                    alt="AiStarterKit Logo"
+                    alt="Seven Spikes Logo"
                   />
                 </Link>
               </div>

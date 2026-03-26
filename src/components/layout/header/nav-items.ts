@@ -5,29 +5,35 @@ export const navItems = [
     label: 'Home',
   },
   {
-    type: 'link',
-    label: 'Chat',
-    href: '/text-generator',
-  },
-  {
-    type: 'link',
-    label: 'Pricing',
-    href: '/pricing',
-  },
-  {
-    type: 'link',
-    label: 'Contact',
-    href: '/contact',
-  },
-  {
     type: 'dropdown',
-    label: 'Pages',
+    label: 'Who We Are',
     items: [
-      { href: '/signin', label: 'Sign In' },
-      { href: '/signup', label: 'Sign Up' },
-      { href: '/reset-password', label: 'Reset Password' },
-      { href: '/not-found', label: '404 Error' },
+      { href: '/about', label: 'About Us' },
+      { href: '/leadership', label: 'Our Leadership' },
+      { href: '/companies', label: 'Our Companies' },
+      { href: '/services', label: 'Our Services' },
+      { href: '/clientele', label: 'Our Clientele' },
     ],
+  },
+  {
+    type: 'link',
+    href: '/gallery',
+    label: 'Gallery',
+  },
+  {
+    type: 'link',
+    href: '/career',
+    label: 'Career',
+  },
+  {
+    type: 'link',
+    href: '/sustainability',
+    label: 'Sustainability',
+  },
+  {
+    type: 'link',
+    href: '/terms',
+    label: 'Terms & Conditions',
   },
 ] satisfies NavItem[];
 

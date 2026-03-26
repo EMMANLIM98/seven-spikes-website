@@ -16,15 +16,15 @@
 }
 
 @theme inline {
-  --color-primary-50: #f4f3ff;
-  --color-primary-100: #ebe9fe;
-  --color-primary-200: #d9d6fe;
-  --color-primary-300: #bdb4fe;
-  --color-primary-400: #9b8afb;
-  --color-primary-500: #7a5af8;
-  --color-primary-600: #6938ef;
-  --color-primary-700: #5925dc;
-  --color-primary-800: #4a1fb8;
+  --color-primary-50: #fdf9eb;
+  --color-primary-100: #f9f0c9;
+  --color-primary-200: #f2df94;
+  --color-primary-300: #e9ca5f;
+  --color-primary-400: #d8b940;
+  --color-primary-500: #bfa92e;
+  --color-primary-600: #9f8c22;
+  --color-primary-700: #7f6f1b;
+  --color-primary-800: #635715;
 
   --color-success-50: #ecfdf3;
   --color-success-500: #ecfdf3;
@@ -46,24 +46,30 @@
   --shadow-theme-lg:
     0px 12px 16px -4px rgba(16, 24, 40, 0.08),
     0px 4px 6px -2px rgba(16, 24, 40, 0.03);
-  --shadow-ring: 0px 0px 0px 4px rgba(70, 95, 255, 0.12);
+  --shadow-ring: 0px 0px 0px 4px rgba(191, 169, 46, 0.22);
   --shadow-theme-md: 0px 8px 30px 0px rgba(12, 11, 25, 0.04);
 
   --background-image-gradient-1: linear-gradient(
     180deg,
-    #f8fcff 0%,
-    #f1efff 50%,
-    #f8dcff 100%
+    #fffdf4 0%,
+    #fdf6dd 50%,
+    #f8ebbe 100%
   );
   --background-image-gradient-2: linear-gradient(
     97deg,
-    #725cff 0%,
-    #b5b1ff 140.21%
+    #bfa92e 0%,
+    #a25b36 52%,
+    #452624 140.21%
   );
 }
 
 .button-bg {
-  background-image: linear-gradient(97deg, #725cff 0%, #b5b1ff 140.21%);
+  background-image: linear-gradient(
+    97deg,
+    #bfa92e 0%,
+    #a25b36 52%,
+    #452624 140.21%
+  );
 }
 
 .tab-img-bg {
@@ -120,15 +126,15 @@
 .gradient-bg-two {
   background-image: var(
     --Gradient-2,
-    linear-gradient(97deg, #725cff 0%, #b5b1ff 140.21%)
+    linear-gradient(97deg, #bfa92e 0%, #a25b36 52%, #452624 140.21%)
   );
 }
 
 @utility hero-glow-bg {
   background-image: linear-gradient(
     180deg,
-    rgba(122, 90, 248, 0) 0%,
-    #7a5af8 100%
+    rgba(191, 169, 46, 0) 0%,
+    #bfa92e 100%
   );
 }
 
@@ -140,10 +146,10 @@
 .core-feature-icon {
   background-image: linear-gradient(
     180deg,
-    #7a5af8 0%,
-    rgba(122, 90, 248, 0) 100%
+    #bfa92e 0%,
+    rgba(191, 169, 46, 0) 100%
   );
-  filter: drop-shadow(0px 23px 33px rgba(87, 80, 241, 0.59));
+  filter: drop-shadow(0px 23px 33px rgba(124, 108, 28, 0.45));
   width: 76px;
   height: 76px;
   align-items: center;
@@ -165,17 +171,17 @@
 .dashboard-gradient {
   background-image: linear-gradient(
     92deg,
-    var(--Colors-Brand-500, #7a5af8) 0%,
-    var(--Colors-Brand-200, #d9d6fe) 100%
+    var(--Colors-Brand-500, #bfa92e) 0%,
+    var(--Colors-Brand-200, #f2df94) 100%
   );
 }
 
 [data-theme="light"] .widget-bg {
   background-image: linear-gradient(
     180deg,
-    #f8fcff 0%,
-    #f1efff 50%,
-    #f8dcff 100%
+    #fffdf4 0%,
+    #fdf6dd 50%,
+    #f8ebbe 100%
   );
 }
 
@@ -263,7 +269,12 @@
 }
 
 .gradient-btn {
-  background-image: linear-gradient(97deg, #725cff 0%, #b5b1ff 140.21%);
+  background-image: linear-gradient(
+    97deg,
+    #bfa92e 0%,
+    #a25b36 52%,
+    #452624 140.21%
+  );
   color: white;
   background-size: 200% auto;
   background-position: 0% center;
@@ -274,7 +285,12 @@
 }
 
 .gradient-btn:hover {
-  background-image: linear-gradient(97deg, #b5b1ff 0%, #725cff 140.21%);
+  background-image: linear-gradient(
+    97deg,
+    #452624 0%,
+    #a25b36 52%,
+    #bfa92e 140.21%
+  );
   background-position: 100% center;
 }
 

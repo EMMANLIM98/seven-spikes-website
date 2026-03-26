@@ -23,24 +23,20 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" className="flex items-end gap-2">
               <Image
-                src="/images/logo-black.svg"
+                src="/images/seven-spikes/seven-spikes-main-logo.png"
                 className="block dark:hidden"
-                alt="AiStarterKit Logo"
+                alt="Seven Spikes Logo"
                 width={180}
                 height={30}
               />
 
               <Image
-                src="/images/logo-white.svg"
+                src="/images/seven-spikes/seven-spikes-main-logo.png"
                 className="hidden dark:block"
-                alt="AiStarterKit Logo"
+                alt="Seven Spikes Logo"
                 width={180}
                 height={30}
               />
-
-              <span className="inline-block px-1.5 py-0.5 rounded-lg rounded-bl-none bg-primary-500/90 text-white text-xs font-medium mb-0.5">
-                Demo
-              </span>
             </Link>
           </div>
 
@@ -61,17 +57,10 @@ export default function Header() {
             </button>
 
             <Link
-              href="/signin"
-              className="text-sm hidden lg:block font-medium text-gray-700 dark:text-gray-400 hover:text-primary-500"
-            >
-              Sign In
-            </Link>
-
-            <Link
               href="/signup"
               className="lg:inline-flex items-center px-5 py-3 gradient-btn hidden text-sm text-white rounded-full button-bg h-11"
             >
-              Get Started Free
+              Contact Us
             </Link>
           </div>
         </div>
