@@ -117,7 +117,7 @@ export default function HeroSection() {
           <div className="absolute top-[300px] right-[130px] floating-4 rounded-full border border-[#f2df94]/30 bg-[#452624]/60 px-5 py-3 text-sm font-semibold text-white shadow-[0_18px_40px_rgba(69,38,36,0.35)] backdrop-blur-md max-[1240px]:right-[60px] max-[1350px]:right-[90px] max-[1500px]:right-[110px]">
             Road Contracting & Infrastructure
           </div>
-          <div className="absolute left-1/2 top-[145px] floating-2 -translate-x-1/2 rounded-full border border-white/20 bg-[#a25b36]/45 px-5 py-3 text-sm font-semibold text-white shadow-[0_18px_40px_rgba(162,91,54,0.28)] backdrop-blur-md">
+          <div className="absolute left-1/2 top-[70px] floating-2 -translate-x-1/2 rounded-full border border-white/20 bg-[#a25b36]/45 px-5 py-3 text-sm font-semibold text-white shadow-[0_18px_40px_rgba(162,91,54,0.28)] backdrop-blur-md">
             Building Construction & Facility Management
           </div>
         </div>
