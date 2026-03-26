@@ -61,7 +61,7 @@ function ExpertiseCard({
   );
 }
 
-export default function BenefitsGrid() {
+export default function ExpertiseGrid() {
   return (
     <section className="relative overflow-hidden bg-white py-16 md:py-24">
       <div className="pointer-events-none absolute inset-0 opacity-60">
