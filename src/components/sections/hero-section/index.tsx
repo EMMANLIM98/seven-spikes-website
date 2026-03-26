@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import HeroLogos from '../hero-logos';
 import { CounterStat } from './counter-stat';
 
