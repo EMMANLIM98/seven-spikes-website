@@ -7,7 +7,7 @@ export default function AboutSevenSpikes() {
         <div className="max-w-[1500px] mx-auto">
           {/* Header */}
           <div className="mb-16">
-            <h2 className="text-gray-900 dark:text-white text-2xl lg:text-3xl font-bold mb-4">
+            <h2 className="text-gray-900 dark:text-white text-2xl lg:text-4xl font-bold mb-4">
               Seven Spikes
             </h2>
             <h3 className="text-gray-700 dark:text-gray-300 text-lg lg:text-xl font-semibold mb-6">
@@ -20,7 +20,7 @@ export default function AboutSevenSpikes() {
 
           {/* Strategic Platforms */}
           <div className="mb-8">
-            <h3 className="text-gray-900 dark:text-white text-xl lg:text-2xl font-bold mb-8">
+            <h3 className="text-gray-700 dark:text-gray-300 text-lg lg:text-xl font-semibold mb-6">
               Operating Through Two Strategic Platforms
             </h3>
             <p className="text-gray-600 dark:text-gray-400 text-sm lg:text-base mb-12">
@@ -40,7 +40,7 @@ export default function AboutSevenSpikes() {
                     className="rounded"
                   />
                   <div>
-                    <h4 className="text-primary-500 font-semibold text-xs mb-1 tracking-[0.08em]">
+                    <h4 className="text-primary-500 font-semibold mb-1 tracking-[0.08em]">
                       UAE OPERATIONS
                     </h4>
                     <p className="text-gray-700 dark:text-gray-300 text-sm font-semibold">
@@ -66,7 +66,7 @@ export default function AboutSevenSpikes() {
                 <div className="flex items-start gap-4 mb-6">
                   <div className="text-3xl">🌍</div>
                   <div>
-                    <h4 className="text-primary-500 font-semibold text-xs mb-1 tracking-[0.08em]">
+                    <h4 className="text-primary-500 font-semibold mb-1 tracking-[0.08em]">
                       INTERNATIONAL OPERATIONS
                     </h4>
                     <p className="text-gray-700 dark:text-gray-300 text-sm font-semibold">
