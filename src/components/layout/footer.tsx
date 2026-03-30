@@ -48,7 +48,7 @@ export default function Footer() {
               <div>
                 <Link href="/" className="block mb-6">
                   <Image
-                    src="/images/seven-spikes/logos/seven-spikes-main-logo.png"
+                    src="/images/seven-spikes/Logos/seven-spikes-main-logo.png"
                     alt="Seven Spikes Logo"
                     width={128}
                     height={32}

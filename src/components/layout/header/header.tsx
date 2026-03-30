@@ -23,7 +23,7 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" className="flex items-end gap-2">
               <Image
-                src="/images/seven-spikes/logos/seven-spikes-main-logo.png"
+                src="/images/seven-spikes/Logos/seven-spikes-main-logo.png"
                 className="block dark:hidden"
                 alt="Seven Spikes Logo"
                 width={180}
@@ -31,7 +31,7 @@ export default function Header() {
               />
 
               <Image
-                src="/images/seven-spikes/logos/seven-spikes-main-logo.png"
+                src="/images/seven-spikes/Logos/seven-spikes-main-logo.png"
                 className="hidden dark:block"
                 alt="Seven Spikes Logo"
                 width={180}

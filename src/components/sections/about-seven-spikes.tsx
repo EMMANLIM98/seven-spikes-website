@@ -33,7 +33,7 @@ export default function AboutSevenSpikes() {
               <div className="p-8 rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 hover:shadow-lg dark:hover:shadow-xl transition">
                 <div className="flex items-start gap-4 mb-6">
                   <Image
-                    src="/images/seven-spikes/other/uae-flag-icon.png"
+                    src="/images/seven-spikes/Other/uae-flag-icon.png"
                     alt="UAE Flag"
                     width={40}
                     height={40}
