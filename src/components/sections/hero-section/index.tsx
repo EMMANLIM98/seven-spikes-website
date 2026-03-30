@@ -30,7 +30,7 @@ export default function HeroSection() {
           <div className="max-w-[1000px] mx-auto relative">
             <div className="p-3 sm:p-[18px] relative z-30 rounded-[32px] border border-white/30 dark:border-white/10 bg-white/20">
               <video
-                src="/images/seven-spikes/Seven Spikes Video.mp4"
+                src="/images/seven-spikes/videos/Seven Spikes Video.mp4"
                 controls
                 autoPlay
                 muted
