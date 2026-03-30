@@ -1,6 +1,11 @@
 import { getCurrentYear } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { navItems } from "./header/nav-items";
+
+const quickLinks = navItems.flatMap((item) =>
+  item.type === "link" ? [{ href: item.href, label: item.label }] : item.items,
+);
 
 export default function Footer() {
   return (
@@ -55,13 +60,11 @@ export default function Footer() {
                   />
                 </Link>
                 <p className="block text-sm text-gray-400 mb-9">
-                  A self-hosted AI starter kit built with Next.js, Tailwind CSS,
-                  and OpenAI integrations. Perfect for developers and startups
-                  to quickly build, deploy, and scale AI-powered SaaS products.
+                  Seven Spikes is a global enterprise with a strong presence in construction, infrastructure, general trading, facilities management, real estate, hospitality, and consultancy. We innovate and grow while ensuring quality and sustainable operations.
                 </p>
                 <div className="flex">
                   <a
-                    href="https://www.linkedin.com/company/pimjo/posts/?feedView=all"
+                    href="https://www.linkedin.com/"
                     target="_blank"
                     className="text-gray-400 hover:text-white/80 size-10"
                   >
@@ -92,7 +95,7 @@ export default function Footer() {
                     </svg>
                   </a>
                   <a
-                    href="https://x.com/PimjoHQ"
+                    href="https://x.com/"
                     target="_blank"
                     className="text-gray-400 hover:text-white/80 size-10"
                   >
@@ -110,7 +113,7 @@ export default function Footer() {
                     </svg>
                   </a>
                   <a
-                    href="https://github.com/PIMJO"
+                    href="https://github.com/"
                     target="_blank"
                     className="text-gray-400 hover:text-white/80 size-10"
                   >
@@ -170,7 +173,7 @@ export default function Footer() {
                     </svg>
                   </a>
                   <a
-                    href="https://www.facebook.com/PimjoHQ"
+                    href="https://www.facebook.com/"
                     target="_blank"
                     className="text-gray-400 hover:text-white/80 size-10"
                   >
@@ -203,135 +206,113 @@ export default function Footer() {
               </div>
             </div>
             <div className="lg:col-span-6 xl:col-span-5">
-              <div className="grid sm:grid-cols-3 gap-7">
-                <div>
-                  <span className="block mb-6 text-sm text-gray-400">
-                    Services
-                  </span>
-                  <nav className="flex flex-col space-y-3">
+              <div>
+                <span className="block mb-6 text-sm text-gray-400">
+                  Quick Links
+                </span>
+                <nav className="grid grid-cols-2 gap-x-8 gap-y-3 sm:grid-cols-3">
+                  {quickLinks.map((item) => (
                     <Link
-                      href="/"
+                      key={`${item.href}-${item.label}`}
+                      href={item.href}
                       className="text-sm font-normal text-gray-400 transition hover:text-white"
                     >
-                      Status
+                      {item.label}
                     </Link>
-                    <Link
-                      href="/pricing"
-                      className="text-sm font-normal text-gray-400 transition hover:text-white"
-                    >
-                      Pricing
-                    </Link>
-                    <Link
-                      href="/pricing#faq"
-                      className="text-sm font-normal text-gray-400 transition hover:text-white"
-                    >
-                      FAQ
-                    </Link>
-                    <Link
-                      href="/contact"
-                      className="text-sm font-normal text-gray-400 transition hover:text-white"
-                    >
-                      Help Docs
-                    </Link>
-                    <Link
-                      href="/privacy"
-                      className="text-sm font-normal text-gray-400 transition hover:text-white"
-                    >
-                      Privacy Policy
-                    </Link>
-                  </nav>
-                </div>
-                <div>
-                  <span className="block mb-6 text-sm text-gray-400">
-                    Features
-                  </span>
-                  <nav className="flex flex-col space-y-3">
-                    <Link
-                      href="/"
-                      className="text-sm font-normal text-gray-400 transition hover:text-white"
-                    >
-                      HTML File Upload
-                    </Link>
-                    <Link
-                      href="/"
-                      className="text-sm font-normal text-gray-400 transition hover:text-white"
-                    >
-                      HTML website hosting
-                    </Link>
-                    <Link
-                      href="/"
-                      className="text-sm font-normal text-gray-400 transition hover:text-white"
-                    >
-                      Free Image Hosting
-                    </Link>
-                    <Link
-                      href="/"
-                      className="text-sm font-normal text-gray-400 transition hover:text-white"
-                    >
-                      Upload PDF Online
-                    </Link>
-                    <Link
-                      href="/"
-                      className="text-sm font-normal text-gray-400 transition hover:text-white"
-                    >
-                      Free Zip file hosting
-                    </Link>
-                  </nav>
-                </div>
-                <div>
-                  <span className="relative block mb-6 text-sm text-gray-400">
-                    Account
-                  </span>
-                  <nav className="flex flex-col space-y-3">
-                    <Link
-                      href="/signin"
-                      className="text-sm font-normal text-gray-400 transition hover:text-white"
-                    >
-                      Login
-                    </Link>
-                    <Link
-                      href="/signup"
-                      className="text-sm font-normal text-gray-400 transition hover:text-white"
-                    >
-                      Sign Up
-                    </Link>
-                    <Link
-                      href="/reset-password"
-                      className="text-sm font-normal text-gray-400 transition hover:text-white"
-                    >
-                      Reset Password
-                    </Link>
-                    <Link
-                      href="/contact"
-                      className="text-sm font-normal text-gray-400 transition hover:text-white"
-                    >
-                      Support
-                    </Link>
-                  </nav>
-                </div>
+                  ))}
+                </nav>
               </div>
             </div>
             <div className="lg:col-span-3">
               <div>
                 <span className="block mb-6 text-sm text-gray-400">
-                  Stay In Touch
+                  Contact Us
                 </span>
-                <p className="block mb-5 text-sm text-gray-400">
-                  Subscribe now for exclusive insights and offers!
-                </p>
-                <form>
-                  <div className="flex flex-col items-center gap-2 w-full sm:max-w-64">
-                    <input
-                      type="email"
-                      placeholder="Enter your email"
-                      className="w-full h-12 p-4 text-sm text-white border border-gray-700 rounded-full placeholder:text-center placeholder:text-gray-400 placeholder:text-sm text-center placeholder:font-normal focus:outline-0"
-                      required
-                    />
-                    <button className="w-full px-6 py-3 text-sm font-medium text-white transition rounded-full cursor-pointer bg-primary-500 hover:bg-primary-600">
-                      Subscribe Now
-                    </button>
-                  </div>
-                </form>
+                <div className="max-w-sm space-y-4 text-sm leading-relaxed text-gray-400">
+                  <p className="font-medium text-gray-200">Regional Head Office</p>
+                  <a
+                    href="mailto:info@sevenspikes.ae"
+                    className="flex items-start gap-3 transition hover:text-white"
+                  >
+                    <span className="mt-0.5 text-primary-500" aria-hidden="true">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M4 7L10.94 11.815C11.574 12.255 12.426 12.255 13.06 11.815L20 7"
+                          stroke="currentColor"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <rect
+                          x="3"
+                          y="5"
+                          width="18"
+                          height="14"
+                          rx="2"
+                          stroke="currentColor"
+                          strokeWidth="1.8"
+                        />
+                      </svg>
+                    </span>
+                    <span>info@sevenspikes.ae</span>
+                  </a>
+                  <a
+                    href="tel:+97143364991"
+                    className="flex items-start gap-3 transition hover:text-white"
+                  >
+                    <span className="mt-0.5 text-primary-500" aria-hidden="true">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M5 4.5H8.5L10.25 8.75L8.25 10.25C9.223 12.224 10.776 13.777 12.75 14.75L14.25 12.75L18.5 14.5V18C18.5 18.5523 18.0523 19 17.5 19C10.5964 19 5 13.4036 5 6.5C5 5.94772 5.44772 5.5 6 5.5"
+                          stroke="currentColor"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                    <span>+971 4 336 4991</span>
+                  </a>
+                  <address className="flex items-start gap-3 not-italic text-gray-400">
+                    <span className="mt-0.5 text-primary-500" aria-hidden="true">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M12 21C15.5 17.4 18 14.4853 18 11C18 7.68629 15.3137 5 12 5C8.68629 5 6 7.68629 6 11C6 14.4853 8.5 17.4 12 21Z"
+                          stroke="currentColor"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <circle cx="12" cy="11" r="2.5" stroke="currentColor" strokeWidth="1.8" />
+                      </svg>
+                    </span>
+                    <span>
+                      611 SIT Tower, Academic City Street
+                      <br />
+                      P.O Box 77951, Dubai Silicon Oasis
+                      <br />
+                      United Arab Emirates
+                    </span>
+                  </address>
+                </div>
               </div>
             </div>
           </div>
@@ -339,8 +320,14 @@ export default function Footer() {
       </div>
       <div className="border-t border-gray-800">
         <div className="container relative z-10 px-5 mx-auto sm:px-7">
-          <div className="py-5 text-center">
-            <p className="text-sm text-gray-500">
+          <div className="flex flex-col items-center gap-3 py-5 text-center lg:flex-row lg:items-start lg:justify-between lg:gap-8 lg:text-left">
+            <p className="max-w-3xl text-xs leading-relaxed text-gray-400 sm:text-sm lg:flex-1">
+              <span className="font-semibold text-gray-300">Legal Disclaimer:</span>{" "}
+              Each company operating under the Seven Spikes name is a legally
+              independent entity, incorporated and governed under the laws of
+              its respective jurisdiction.
+            </p>
+            <p className="text-sm text-gray-500 lg:whitespace-nowrap lg:pt-0.5">
               &copy; {getCurrentYear()} Seven Spikes - All Rights Reserved.
             </p>
           </div>
