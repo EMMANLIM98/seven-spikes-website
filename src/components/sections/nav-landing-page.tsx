@@ -11,7 +11,7 @@ type Props = {
 export default function NavLandingPageSection({ page }: Props) {
   return (
     <>
-      <section className="relative isolate overflow-hidden bg-[#0b1321] text-white">
+      <section className="relative isolate overflow-hidden bg-[#0b1321] text-white dark-hero-bg">
         <Image
           src={page.heroImage}
           alt=""
@@ -46,7 +46,7 @@ export default function NavLandingPageSection({ page }: Props) {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fff_0%,#f8f6ef_100%)] py-16 dark:bg-[#101828] dark:bg-none sm:py-20 lg:py-24">
+      <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fff_0%,#f8f6ef_100%)] py-16 dark:dark-surface-bg sm:py-20 lg:py-24">
         <div className="pointer-events-none absolute inset-0 opacity-60">
           <div className="absolute -left-8 top-10 h-48 w-48 rotate-45 border border-[#e9ddbb] bg-white/40" />
           <div className="absolute right-0 top-20 h-56 w-56 rounded-full bg-[#c9af2c]/8 blur-3xl" />

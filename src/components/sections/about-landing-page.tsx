@@ -14,7 +14,7 @@ export default function AboutLandingPageSection({ page }: Props) {
 
   return (
     <>
-      <section className="relative isolate overflow-hidden bg-[#0b1321] pb-16 pt-16 text-white sm:pb-20 sm:pt-20 lg:pb-24 lg:pt-24">
+      <section className="relative isolate overflow-hidden bg-[#0b1321] pb-16 pt-16 text-white dark-hero-bg sm:pb-20 sm:pt-20 lg:pb-24 lg:pt-24">
         <Image
           src={page.heroImage}
           alt=""
@@ -34,7 +34,7 @@ export default function AboutLandingPageSection({ page }: Props) {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fff_0%,#f8f6ef_100%)] py-16 dark:bg-[#101828] dark:bg-none sm:py-20 lg:py-24">
+      <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fff_0%,#f8f6ef_100%)] py-16 dark:dark-surface-bg sm:py-20 lg:py-24">
       <div className="pointer-events-none absolute inset-0 opacity-60">
         <div className="absolute right-0 top-20 h-56 w-56 rounded-full bg-[#c9af2c]/8 blur-3xl" />
       </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import AboutLandingPageSection from '@/components/sections/about-landing-page';
+import LeadershipLandingPageSection from '@/components/sections/leadership-landing-page';
 import NavLandingPageSection from '@/components/sections/nav-landing-page';
 import {
   isNavLandingSlug,
@@ -42,6 +43,10 @@ export default async function NavLandingRoute({ params }: PageProps) {
 
   if (slug === 'about') {
     return <AboutLandingPageSection page={navLandingPages[slug]} />;
+  }
+
+  if (slug === 'leadership') {
+    return <LeadershipLandingPageSection page={navLandingPages[slug]} />;
   }
 
   return <NavLandingPageSection page={navLandingPages[slug]} />;

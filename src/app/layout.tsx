@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`bg-gray-50 dark:bg-dark-secondary min-h-screen flex flex-col ${onest.className}`}
+        className={`bg-gray-50 dark:dark-surface-bg min-h-screen flex flex-col ${onest.className}`}
       >
          <Analytics />
         <ThemeProvider disableTransitionOnChange>

@@ -15,7 +15,7 @@ export default function PricingSection() {
     useState<BillingPeriodKey>('monthly');
 
   return (
-    <section className="py-14 md:py-30 bg-gray-50 dark:bg-[#171f2e] dark:bg-linear-180 dark:from-white/3 dark:from-[45.56%] dark:to-white/0">
+    <section className="py-14 md:py-30 bg-gray-50 dark:dark-surface-bg">
       <div className="wrapper">
         <div className="max-w-2xl mx-auto mb-12 text-center">
           <h2 className="mb-3 font-bold text-center text-gray-800 text-3xl dark:text-white/90 md:text-title-lg">

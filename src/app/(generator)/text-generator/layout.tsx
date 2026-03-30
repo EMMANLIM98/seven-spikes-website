@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Layout({ children }: PropsWithChildren) {
   return (
-    <main className="flex flex-col bg-gray-50 dark:bg-gray-900">
+    <main className="flex flex-col bg-gray-50 dark:dark-surface-bg">
       <div className="flex-[1_1_0]">
         <div className="relative flex flex-col h-full isolate">{children}</div>
       </div>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function AboutSevenSpikes() {
   return (
-    <section className="py-16 lg:py-24 relative overflow-hidden dark:bg-gray-950">
+    <section className="py-16 lg:py-24 relative overflow-hidden dark:dark-surface-bg">
       <div className="wrapper">
         <div className="max-w-[1500px] mx-auto">
           {/* Header */}
