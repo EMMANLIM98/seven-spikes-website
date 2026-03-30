@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import type { NavLandingPage } from '@/content/nav-landing-pages';
+import AboutHeroBanner from './about-hero-banner';
 
 type Props = {
   page: NavLandingPage;
@@ -12,47 +13,34 @@ export default function AboutLandingPageSection({ page }: Props) {
   }
 
   return (
-    <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fff_0%,#f8f6ef_100%)] py-16 dark:bg-[#101828] dark:bg-none sm:py-20 lg:py-24">
+    <>
+      <section className="relative isolate overflow-hidden bg-[#0b1321] pb-16 pt-16 text-white sm:pb-20 sm:pt-20 lg:pb-24 lg:pt-24">
+        <Image
+          src={page.heroImage}
+          alt=""
+          fill
+          priority
+          aria-hidden="true"
+          className="scale-110 object-cover blur-md"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-[#070e1a]/78" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(19,32,53,0.6),transparent)]" />
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#0b1321] to-transparent" />
+        <div className="wrapper relative z-10">
+          <div className="mx-auto max-w-6xl">
+            <AboutHeroBanner page={page} />
+          </div>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fff_0%,#f8f6ef_100%)] py-16 dark:bg-[#101828] dark:bg-none sm:py-20 lg:py-24">
       <div className="pointer-events-none absolute inset-0 opacity-60">
         <div className="absolute right-0 top-20 h-56 w-56 rounded-full bg-[#c9af2c]/8 blur-3xl" />
       </div>
 
       <div className="wrapper relative z-10">
         <div className="mx-auto max-w-6xl">
-          <section className="mb-10 overflow-hidden rounded-[34px] border border-white/60 bg-[linear-gradient(120deg,#f8f8f8_0%,#f1f1f1_45%,#ece8de_100%)] p-5 shadow-[0_20px_60px_rgba(15,23,40,0.1)] dark:border-white/10 dark:bg-[linear-gradient(120deg,rgba(255,255,255,0.05)_0%,rgba(255,255,255,0.02)_100%)] sm:mb-12 sm:p-8 lg:p-10">
-            <div className="grid items-center gap-8 rounded-[28px] bg-[linear-gradient(110deg,#ffffff_0%,#f3f4f6_52%,#ece9df_100%)] p-6 dark:bg-[linear-gradient(110deg,rgba(255,255,255,0.05)_0%,rgba(255,255,255,0.02)_100%)] sm:p-8 lg:grid-cols-[1.2fr_0.8fr]">
-              <div>
-                <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
-                  {page.aboutContent.sectionTitle}
-                </h1>
-                <p className="mt-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#b5961d]">
-                  {page.aboutContent.sectionSubtitle}
-                </p>
-
-                <div className="mt-6 space-y-4">
-                  {page.aboutContent.introParagraphs.map((paragraph) => (
-                    <p
-                      key={paragraph}
-                      className="text-base leading-8 text-gray-700 dark:text-gray-300"
-                    >
-                      {paragraph}
-                    </p>
-                  ))}
-                </div>
-              </div>
-
-              <div className="relative min-h-[240px] overflow-hidden rounded-[24px] border border-gray-200/70 dark:border-white/10 sm:min-h-[300px]">
-                <Image
-                  src={page.aboutContent.overviewImage}
-                  alt={page.aboutContent.overviewImageAlt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 35vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/5 to-transparent" />
-              </div>
-            </div>
-          </section>
 
           <section className="space-y-10 overflow-hidden rounded-[34px] border border-gray-200/70 bg-white/95 p-5 shadow-[0_20px_60px_rgba(15,23,40,0.08)] dark:border-white/10 dark:bg-white/[0.03] sm:p-8 lg:p-10">
             <div className="rounded-[28px] bg-[linear-gradient(180deg,#ededed_0%,#f5f5f5_100%)] p-6 dark:bg-[linear-gradient(180deg,rgba(255,255,255,0.08)_0%,rgba(255,255,255,0.03)_100%)] sm:p-8">
@@ -168,6 +156,7 @@ export default function AboutLandingPageSection({ page }: Props) {
           </section>
         </div>
       </div>
-    </section>
+      </section>
+    </>
   );
 }

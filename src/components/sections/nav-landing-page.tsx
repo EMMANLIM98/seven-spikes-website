@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import type { NavLandingPage } from '@/content/nav-landing-pages';
+import LandingHeroBanner from './landing-hero-banner';
 
 type Props = {
   page: NavLandingPage;
@@ -10,66 +11,40 @@ type Props = {
 export default function NavLandingPageSection({ page }: Props) {
   return (
     <>
-      {page.slug !== 'about' ? (
-        <section className="relative isolate overflow-hidden bg-[#0f1728] text-white">
-          <Image
-            src={page.heroImage}
-            alt={page.heroImageAlt}
-            fill
-            priority
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(10,16,28,0.96),rgba(17,29,48,0.88)_45%,rgba(159,125,38,0.58))]" />
-          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#0f1728] via-[#0f1728]/80 to-transparent" />
-          <div className="pointer-events-none absolute -left-20 top-16 h-56 w-56 rounded-full bg-[#d3b34a]/20 blur-3xl" />
-          <div className="pointer-events-none absolute right-0 top-0 h-72 w-72 rounded-full bg-[#355c9d]/25 blur-3xl" />
+      <section className="relative isolate overflow-hidden bg-[#0b1321] text-white">
+        <Image
+          src={page.heroImage}
+          alt=""
+          fill
+          priority
+          aria-hidden="true"
+          className="scale-110 object-cover blur-md"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-[#070e1a]/78" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(19,32,53,0.6),transparent)]" />
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#0b1321] to-transparent" />
 
-          <div className="wrapper relative z-10 py-16 sm:py-20 lg:py-24 xl:py-28">
-            <div className="mx-auto max-w-6xl">
-              <div className="max-w-3xl">
-                <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl lg:leading-[1.08]">
-                  {page.title}
-                </h1>
-                <p className="mt-5 max-w-2xl text-base leading-7 text-white/78 sm:mt-6 sm:text-lg sm:leading-8">
-                  {page.description}
-                </p>
-
-                <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row">
-                  <Link
-                    href={page.cta.primaryHref}
-                    className="inline-flex items-center justify-center rounded-full bg-[#c9af2c] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#b79b1c]"
-                  >
-                    {page.cta.primaryLabel}
-                  </Link>
-                  {page.cta.secondaryHref && page.cta.secondaryLabel ? (
-                    <Link
-                      href={page.cta.secondaryHref}
-                      className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/8 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/14"
-                    >
-                      {page.cta.secondaryLabel}
-                    </Link>
-                  ) : null}
-                </div>
-              </div>
-
-              <div className="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-2 xl:grid-cols-4">
-                {page.stats.map((stat) => (
-                  <div
-                    key={stat.label}
-                    className="rounded-[28px] border border-white/12 bg-white/8 p-5 backdrop-blur-md"
-                  >
-                    <p className="text-3xl font-bold text-white sm:text-[2rem]">
-                      {stat.value}
-                    </p>
-                    <p className="mt-2 text-sm leading-6 text-white/68">{stat.label}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+        <div className="wrapper relative z-10 py-16 sm:py-20 lg:py-24 xl:py-28">
+          <div className="mx-auto max-w-6xl">
+            <LandingHeroBanner
+              title={page.title}
+              subtitle={page.eyebrow}
+              descriptionLines={[page.description]}
+              imageSrc={page.heroImage}
+              imageAlt={page.heroImageAlt}
+              cta={{
+                primaryLabel: page.cta.primaryLabel,
+                primaryHref: page.cta.primaryHref,
+                secondaryLabel: page.cta.secondaryLabel,
+                secondaryHref: page.cta.secondaryHref,
+              }}
+              stats={page.stats}
+              theme="dark"
+            />
           </div>
-        </section>
-      ) : null}
+        </div>
+      </section>
 
       <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fff_0%,#f8f6ef_100%)] py-16 dark:bg-[#101828] dark:bg-none sm:py-20 lg:py-24">
         <div className="pointer-events-none absolute inset-0 opacity-60">
@@ -146,8 +121,8 @@ export default function NavLandingPageSection({ page }: Props) {
                       key={`${milestone.year}-${milestone.title}`}
                       className={cn(
                         'overflow-hidden rounded-[24px] border border-gray-200/80 bg-white/95 shadow-[0_16px_40px_rgba(15,23,40,0.08)] transition hover:-translate-y-1 hover:shadow-[0_20px_46px_rgba(15,23,40,0.12)] dark:border-white/10 dark:bg-white/[0.04]',
-                        page.aboutContent.milestones.length % 3 === 1 &&
-                          index === page.aboutContent.milestones.length - 1 &&
+                        page.aboutContent!.milestones.length % 3 === 1 &&
+                          index === page.aboutContent!.milestones.length - 1 &&
                           'md:col-span-2 xl:col-span-3'
                       )}
                     >

@@ -99,8 +99,8 @@ export const navLandingPages: Record<NavLandingSlug, NavLandingPage> = {
     eyebrow: 'Who We Are',
     description:
       'Seven Spikes is a coordinated network of specialized companies delivering infrastructure, construction, trading, consultancy, and operational excellence across the UAE and international markets.',
-    heroImage: '/images/hero/hero-img.jpg',
-    heroImageAlt: 'Seven Spikes city skyline background',
+    heroImage: '/images/seven-spikes/Pics/About/About-Us.jpg',
+    heroImageAlt: 'Seven Spikes team collaboration',
     stats: [
       { value: '15+', label: 'Years of market presence' },
       { value: '2', label: 'Strategic operating platforms' },
