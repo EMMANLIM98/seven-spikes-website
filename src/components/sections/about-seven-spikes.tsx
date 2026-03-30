@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function AboutSevenSpikes() {
   return (
@@ -53,12 +54,12 @@ export default function AboutSevenSpikes() {
                     <span className="font-semibold">Focus:</span> Roads & Infrastructure, Building, General Trading, Facilities Management
                   </p>
                 </div>
-                <a
+                <Link
                   href="/companies"
                   className="text-primary-500 hover:text-primary-600 font-semibold text-sm transition"
                 >
                   [ Explore UAE Operations ]
-                </a>
+                </Link>
               </div>
 
               {/* International Operations */}
@@ -85,12 +86,12 @@ export default function AboutSevenSpikes() {
                     <span className="font-semibold">Countries:</span> Turkey, Jordan, Oman, India
                   </p>
                 </div>
-                <a
+                <Link
                   href="/companies"
                   className="text-primary-500 hover:text-primary-600 font-semibold text-sm transition"
                 >
                   [ Explore International Operations ]
-                </a>
+                </Link>
               </div>
             </div>
           </div>
