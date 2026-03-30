@@ -10,49 +10,49 @@ export default function HeroLogos() {
         </p>
         <div className="flex flex-wrap justify-center items-center gap-7 md:gap-14 mt-10">
           <Image
-            src="/images/brands/br-1.svg"
+            src="/images/seven-spikes/Pics/Clientele/DEWA.png"
             className="opacity-50 transition hover:opacity-100"
             alt=""
             width={80}
             height={32}
           />
           <Image
-            src="/images/brands/br-2.svg"
+            src="/images/seven-spikes/Pics/Clientele/Amana.png"
             className="opacity-50 transition hover:opacity-100"
             width={80}
             height={32}
             alt=""
           />
           <Image
-            src="/images/brands/br-3.svg"
+            src="/images/seven-spikes/Pics/Clientele/Bam-International-Edition.png"
             className="opacity-50 transition hover:opacity-100"
             width={80}
             height={32}
             alt=""
           />
           <Image
-            src="/images/brands/br-4.svg"
+            src="/images/seven-spikes/Pics/Clientele/SSANGYONG.jpg"
             className="opacity-50 transition hover:opacity-100"
             alt=""
             width={80}
             height={32}
           />
           <Image
-            src="/images/brands/br-5.svg"
+            src="/images/seven-spikes/Pics/Clientele/UAE-MOHRE.png"
             className="opacity-50 transition hover:opacity-100"
             width={80}
             height={32}
             alt=""
           />
           <Image
-            src="/images/brands/br-6.svg"
+            src="/images/seven-spikes/Pics/Clientele/Nablus.png"
             className="opacity-50 transition hover:opacity-100"
             width={80}
             height={32}
             alt=""
           />
           <Image
-            src="/images/brands/br-7.svg"
+            src="/images/seven-spikes/Pics/Clientele/PLQC.png"
             className="opacity-50 transition hover:opacity-100"
             width={80}
             height={32}
