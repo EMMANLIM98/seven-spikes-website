@@ -665,7 +665,7 @@ export const navLandingPages: Record<NavLandingSlug, NavLandingPage> = {
         'Readiness to support quality, compliance, and client confidence.',
         'Strong communication across operational and administrative roles.',
       ],
-      image: '/images/seven-spikes/Pics/Clientele/Focus-Tech.jpg',
+      image: '/images/seven-spikes/Logos/seven-spikes-main-logo.png',
       imageAlt: 'Professional working environment',
     },
     cta: {
