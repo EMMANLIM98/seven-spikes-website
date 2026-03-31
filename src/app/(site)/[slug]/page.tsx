@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import AboutLandingPageSection from '@/components/sections/about-landing-page';
+import ClienteleLandingPageSection from '@/components/sections/clientele-landing-page';
 import CompaniesLandingPageSection from '@/components/sections/companies-landing-page';
 import LeadershipLandingPageSection from '@/components/sections/leadership-landing-page';
 import ServicesLandingPageSection from '@/components/sections/services-landing-page';
@@ -57,6 +58,10 @@ export default async function NavLandingRoute({ params }: PageProps) {
 
   if (slug === 'services') {
     return <ServicesLandingPageSection page={navLandingPages[slug]} />;
+  }
+
+  if (slug === 'clientele') {
+    return <ClienteleLandingPageSection page={navLandingPages[slug]} />;
   }
 
   return <NavLandingPageSection page={navLandingPages[slug]} />;

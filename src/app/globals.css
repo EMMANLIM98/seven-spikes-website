@@ -166,6 +166,20 @@
     linear-gradient(180deg, #0b1321 0%, #0f1b2f 62%, #12203a 100%);
 }
 
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(calc(-100% / 3)); }
+}
+
+@keyframes marquee-right {
+  from { transform: translateX(calc(-100% / 3)); }
+  to   { transform: translateX(0); }
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
 .core-feature-wrapper {
   border-radius: 20px;
   box-shadow: 0px 30px 50px -32px rgba(107, 110, 148, 0.04);
