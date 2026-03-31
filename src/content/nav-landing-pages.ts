@@ -309,12 +309,12 @@ export const navLandingPages: Record<NavLandingSlug, NavLandingPage> = {
       "Seven Spikes' global footprint reflects our commitment to delivering excellence and precision worldwide. With a strategic presence across key international markets, we continue to expand our reach to serve diverse industries with reliability and effectiveness. Our extensive network enables us to deliver high-quality operations with cultural awareness, regional expertise, and strategic insights. Through this presence, we continue to build partnerships, embrace proven practices, and deliver consistent solutions that shape industries. Our companies operate as independent legal entities, united by a common philosophy, quality standards, and leadership vision.",
     heroImage: '/images/seven-spikes/Pics/Expertise/Seven Spikes Building Contracting.avif',
     heroImageAlt: 'Construction and corporate operations',
-    stats: [
-      { value: '10+', label: 'Brand-aligned entities' },
-      { value: '2', label: 'Operating jurisdictions' },
-      { value: '5+', label: 'Business verticals served' },
-      { value: '1', label: 'Integrated group identity' },
-    ],
+    // stats: [
+    //   { value: '10+', label: 'Brand-aligned entities' },
+    //   { value: '2', label: 'Operating jurisdictions' },
+    //   { value: '5+', label: 'Business verticals served' },
+    //   { value: '1', label: 'Integrated group identity' },
+    // ],
     cards: [
       {
         title: 'Sector Specialization',
@@ -334,31 +334,31 @@ export const navLandingPages: Record<NavLandingSlug, NavLandingPage> = {
     ],
     spotlight: {
       eyebrow: 'Business Portfolio',
-      title: 'A network designed for breadth without losing focus.',
+      title: 'Empowering Growth Through Global Collaboration',
       description:
-        'From contracting and logistics to hospitality and consultancy, the group structure gives clients access to targeted capabilities across multiple sectors.',
+        '',
       bullets: [
-        'Dedicated entities for construction, road contracting, and trading activities.',
-        'Aligned support for overseas operations and market entry coordination.',
-        'Brand consistency that improves visibility and confidence across engagements.',
+        'At Seven Spikes, we continuously strive to expand our reach and enhance our service capabilities through strategic collaborations with global partners. Our commitment to innovation, quality, and sustainable growth drives us to build alliances with industry leaders across key markets.',
+        'We are actively engaged in establishing potential agreements with prominent companies worldwide to strengthen our expertise, adopt advanced technologies, and deliver cutting-edge solutions across multiple industries.',
+        'Our ongoing efforts are focused on forming strategic partnerships in regions known for technological innovation and infrastructure excellence. Through these partnerships, Seven Spikes aims to unlock new opportunities, embrace cutting-edge technologies, and drive excellence on a global scale.',
       ],
       image: '/images/seven-spikes/Pics/Expertise/Seven Spikes Road Contracting.jpg',
       imageAlt: 'Road contracting operations',
     },
-    showcase: {
-      title: 'Representative Company Marks',
-      description:
-        'A selection of logos across the Seven Spikes network, reflecting the breadth of our operating portfolio.',
-      kind: 'logos',
-      items: [
-        { src: '/images/seven-spikes/Logos/PNG/SSG-PNG.png', alt: 'Seven Spikes Group logo' },
-        { src: '/images/seven-spikes/Logos/PNG/SSRC-PNG.png', alt: 'Seven Spikes Road Contracting logo' },
-        { src: '/images/seven-spikes/Logos/PNG/SSGT-PNG.png', alt: 'Seven Spikes General Trading logo' },
-        { src: '/images/seven-spikes/Logos/PNG/SSBC-PNG.png', alt: 'Seven Spikes Building Contracting logo' },
-        { src: '/images/seven-spikes/Logos/PNG/SSCH-PNG.png', alt: 'Seven Spikes consultancy and hospitality logo' },
-        { src: '/images/seven-spikes/Logos/PNG/SSOS-PNG.png', alt: 'Seven Spikes Overseas logo' },
-      ],
-    },
+    // showcase: {
+    //   title: 'Representative Company Marks',
+    //   description:
+    //     'A selection of logos across the Seven Spikes network, reflecting the breadth of our operating portfolio.',
+    //   kind: 'logos',
+    //   items: [
+    //     { src: '/images/seven-spikes/Logos/PNG/SSG-PNG.png', alt: 'Seven Spikes Group logo' },
+    //     { src: '/images/seven-spikes/Logos/PNG/SSRC-PNG.png', alt: 'Seven Spikes Road Contracting logo' },
+    //     { src: '/images/seven-spikes/Logos/PNG/SSGT-PNG.png', alt: 'Seven Spikes General Trading logo' },
+    //     { src: '/images/seven-spikes/Logos/PNG/SSBC-PNG.png', alt: 'Seven Spikes Building Contracting logo' },
+    //     { src: '/images/seven-spikes/Logos/PNG/SSCH-PNG.png', alt: 'Seven Spikes consultancy and hospitality logo' },
+    //     { src: '/images/seven-spikes/Logos/PNG/SSOS-PNG.png', alt: 'Seven Spikes Overseas logo' },
+    //   ],
+    // },
     cta: {
       title: 'Need the right entity for your next engagement?',
       description:
