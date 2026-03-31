@@ -750,7 +750,7 @@ export const navLandingPages: Record<NavLandingSlug, NavLandingPage> = {
     title: 'Terms & Conditions',
     eyebrow: 'Terms',
     description:
-      'Review the guiding principles that shape how Seven Spikes presents information, handles inquiries, and communicates its services across digital platforms.',
+      'These Conditions of Use and Disclaimer (the "Conditions") set out important information about the Seven Spikes Website hosted under the URL https://sevenspikesgroup.com (the "Website"). Please read it carefully as it affects your rights and liabilities under the law. If you disagree with the Conditions, please do not use the Website.',
     heroImage: '/images/seven-spikes/Pics/Expertise/Seven Spikes General Trading.avif',
     heroImageAlt: 'Seven Spikes terms and policies page',
     stats: [
@@ -761,30 +761,30 @@ export const navLandingPages: Record<NavLandingSlug, NavLandingPage> = {
     ],
     cards: [
       {
-        title: 'Informational Use',
+        title: '1.0 Use of the Website',
         description:
-          'Website content is intended to support general understanding of the Seven Spikes network, services, and capabilities.',
+          'By using this Website, users agree to lawful use, non-infringement of third-party rights, and responsible behavior without unauthorized access attempts or harmful conduct.',
       },
       {
-        title: 'Independent Entities',
+        title: '2.0 Intellectual Property',
         description:
-          'Operating companies under the Seven Spikes name remain legally independent and governed by their own jurisdictions.',
+          'All website content, design, graphics, logos, and trademarks are owned by or licensed to Seven Spikes and are protected by intellectual property laws.',
       },
       {
-        title: 'Direct Confirmation',
+        title: '3.0 Disclaimer',
         description:
-          'Project-specific commitments, scope, and commercial terms should always be confirmed directly with the relevant company or representative.',
+          'Website information is provided on an "as is" basis without express or implied warranties, and Seven Spikes is not liable for loss or damage arising from use or reliance on content.',
       },
     ],
     spotlight: {
-      eyebrow: 'Usage Principles',
-      title: 'Designed for clarity, reference, and responsible engagement.',
+      eyebrow: '4.0 General',
+      title: 'Ongoing updates, governing law, and enforceability.',
       description:
-        'Our terms presentation is intended to support a transparent user experience while reinforcing that formal engagements depend on direct communication and agreed documentation.',
+        'Seven Spikes may revise these Conditions at any time by updating this page. Continued use after updates are posted constitutes acceptance of the revised terms.',
       bullets: [
-        'Digital content should not be treated as a substitute for formal contracts.',
-        'Users should verify the relevant operating entity for specific engagements.',
-        'Questions about terms or use can be directed to our team through the contact page.',
+        'These Conditions are governed by the laws of the jurisdiction in which Seven Spikes operates.',
+        'Any disputes shall be subject to the exclusive jurisdiction of the local courts.',
+        'If any provision is invalid or unenforceable, all remaining provisions remain in full force and effect.',
       ],
       image: '/images/seven-spikes/Pics/Expertise/Consulting.jpeg',
       imageAlt: 'Terms and advisory context',

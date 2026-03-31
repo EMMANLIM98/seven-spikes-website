@@ -7,6 +7,7 @@ import CompaniesLandingPageSection from '@/components/sections/companies-landing
 import LeadershipLandingPageSection from '@/components/sections/leadership-landing-page';
 import ServicesLandingPageSection from '@/components/sections/services-landing-page';
 import SustainabilityLandingPageSection from '@/components/sections/sustainability-landing-page';
+import TermsLandingPageSection from '@/components/sections/terms-landing-page';
 import NavLandingPageSection from '@/components/sections/nav-landing-page';
 import {
   isNavLandingSlug,
@@ -72,6 +73,10 @@ export default async function NavLandingRoute({ params }: PageProps) {
 
   if (slug === 'sustainability') {
     return <SustainabilityLandingPageSection page={navLandingPages[slug]} />;
+  }
+
+  if (slug === 'terms') {
+    return <TermsLandingPageSection page={navLandingPages[slug]} />;
   }
 
   return <NavLandingPageSection page={navLandingPages[slug]} />;
