@@ -537,12 +537,12 @@ export const navLandingPages: Record<NavLandingSlug, NavLandingPage> = {
     title: 'Gallery',
     eyebrow: 'Visual Highlights',
     description:
-      'A visual look at the sectors, operating environments, and delivery context that shape the Seven Spikes brand across markets.',
-    heroImage: '/images/seven-spikes/Pics/Expertise/Seven Spikes Building Contracting.avif',
-    heroImageAlt: 'Construction gallery hero',
+      'A visual record of our work across road infrastructure, building construction, beach development, traffic management, street lighting, marine works, and events logistics.',
+    heroImage: '/images/seven-spikes/Pics/Gallery/Road-and-Infrastructure-Works.jpg',
+    heroImageAlt: 'Road and infrastructure works',
     stats: [
-      { value: '9', label: 'Featured visual moments' },
-      { value: 'Multi-sector', label: 'Coverage across business verticals' },
+      { value: '29', label: 'Project images' },
+      { value: '7', label: 'Project categories' },
       { value: 'UAE+', label: 'Regional and international context' },
       { value: 'Live', label: 'Real operational imagery' },
     ],
