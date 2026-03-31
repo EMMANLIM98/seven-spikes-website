@@ -374,41 +374,42 @@ export const navLandingPages: Record<NavLandingSlug, NavLandingPage> = {
     title: 'Our Services',
     eyebrow: 'Capabilities',
     description:
-      'Seven Spikes delivers a broad service portfolio covering infrastructure, building, consultancy, trading, and operational support for complex business environments.',
+      'At Seven Spikes, we deliver comprehensive solutions designed to meet the diverse demands of modern industries. With expertise across multiple sectors, we combine innovation, efficiency, and uncompromising quality to ensure every project is executed to the highest standard.',
     heroImage: '/images/seven-spikes/Pics/Expertise/Road Construction.jpg',
     heroImageAlt: 'Road construction and service delivery',
-    stats: [
-      { value: '5', label: 'Primary service verticals' },
-      { value: '360', label: 'End-to-end support approach' },
-      { value: '2', label: 'Regional operating platforms' },
-      { value: '1', label: 'Trusted service standard' },
-    ],
     cards: [
       {
         title: 'Road Contracting & Infrastructure',
         description:
-          'Execution support for highways, urban roads, infrastructure packages, and preventive maintenance requirements.',
+          'We specialize in building robust, sustainable infrastructure that connects communities and drives progress. Services include road construction & rehabilitation, road marking & signage installation, crack sealing & preventive maintenance, street lighting & utility solutions, and emergency road repairs.',
       },
       {
-        title: 'Building & Facility Management',
+        title: 'Building Construction & Facility Management',
         description:
-          'Capabilities spanning construction delivery, facility upkeep, and building-related operational management.',
+          'From concept to completion, we provide innovative building solutions tailored to meet unique project needs. Services span building & construction, facility management & maintenance, and interior fit-outs & finishing.',
       },
       {
-        title: 'Trading, Hospitality & Advisory',
+        title: 'General Trading & Logistics',
         description:
-          'Commercial, operational, and consultancy services designed to support broader business growth and execution.',
+          'With a global network and strong partnerships, we deliver seamless procurement and supply chain solutions including material sourcing & supply, logistics & distribution, and custom trading solutions.',
+      },
+      {
+        title: 'Real Estate & Hospitality',
+        description:
+          'We transform spaces into thriving communities and welcoming environments through property development & management, hotel & resort development, and design consultation & planning services.',
+      },
+      {
+        title: 'Consultancy Services',
+        description:
+          'Our consultancy expertise empowers businesses to make informed decisions and achieve long-term success through project planning & management, market research & feasibility studies, and business development solutions.',
       },
     ],
     spotlight: {
       eyebrow: 'Execution Strength',
-      title: 'Services shaped around real operating requirements.',
+      title: 'Building Roads That Drive the Future',
       description:
-        'Our service mix is built to support both project delivery and long-term business operations, giving clients access to practical expertise across sectors.',
+        'At Seven Spikes, we specialize in delivering road construction solutions that prioritize reliability, performance, and long-term value. By integrating innovative technologies with expert craftsmanship, we ensure that every road is laid with precision and built to handle continuous traffic demands. Our work strengthens regional connectivity, supports economic growth, and enhances daily movement for communities. With a strong focus on durability and safety, we create roadways that contribute to a more resilient, connected, and efficient transportation network.',
       bullets: [
-        'Integrated support from planning through implementation.',
-        'Operational flexibility for public, private, and mixed-use environments.',
-        'Cross-functional capability spanning field execution and business advisory.',
       ],
       image: '/images/seven-spikes/Pics/Expertise/Seven Spikes Asphalt Manufacturing.jpg',
       imageAlt: 'Industrial services and asphalt manufacturing',
@@ -419,6 +420,16 @@ export const navLandingPages: Record<NavLandingSlug, NavLandingPage> = {
         'Selected sectors represented across the Seven Spikes operating portfolio.',
       kind: 'images',
       items: [
+        {
+          title: 'Road Contracting & Infrastructure',
+          image: '/images/seven-spikes/Pics/Expertise/Seven Spikes Road Contracting.jpg',
+          imageAlt: 'Road contracting and infrastructure',
+        },
+        {
+          title: 'Building Construction & Facility Management',
+          image: '/images/seven-spikes/Pics/Expertise/Seven Spikes Building Contracting.avif',
+          imageAlt: 'Building contracting and facility management',
+        },
         {
           title: 'General Trading & Logistics',
           image: '/images/seven-spikes/Pics/Expertise/Seven Spikes General Trading.avif',
@@ -431,8 +442,13 @@ export const navLandingPages: Record<NavLandingSlug, NavLandingPage> = {
         },
         {
           title: 'Consultancy Services',
-          image: '/images/seven-spikes/Pics/Expertise/Consulting.jpeg',
-          imageAlt: 'Consultancy services',
+          image: '/images/seven-spikes/Pics/Expertise/Seven Spikes Consultancy.jpg',
+          imageAlt: 'Consultancy and advisory services',
+        },
+        {
+          title: 'Industrial & Manufacturing',
+          image: '/images/seven-spikes/Pics/Expertise/Seven Spikes Asphalt Manufacturing.jpg',
+          imageAlt: 'Industrial operations and manufacturing',
         },
       ],
     },

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import AboutLandingPageSection from '@/components/sections/about-landing-page';
 import CompaniesLandingPageSection from '@/components/sections/companies-landing-page';
 import LeadershipLandingPageSection from '@/components/sections/leadership-landing-page';
+import ServicesLandingPageSection from '@/components/sections/services-landing-page';
 import NavLandingPageSection from '@/components/sections/nav-landing-page';
 import {
   isNavLandingSlug,
@@ -52,6 +53,10 @@ export default async function NavLandingRoute({ params }: PageProps) {
 
   if (slug === 'companies') {
     return <CompaniesLandingPageSection page={navLandingPages[slug]} />;
+  }
+
+  if (slug === 'services') {
+    return <ServicesLandingPageSection page={navLandingPages[slug]} />;
   }
 
   return <NavLandingPageSection page={navLandingPages[slug]} />;
