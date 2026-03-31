@@ -309,12 +309,12 @@ export const navLandingPages: Record<NavLandingSlug, NavLandingPage> = {
       "Seven Spikes' global footprint reflects our commitment to delivering excellence and precision worldwide. With a strategic presence across key international markets, we continue to expand our reach to serve diverse industries with reliability and effectiveness. Our extensive network enables us to deliver high-quality operations with cultural awareness, regional expertise, and strategic insights. Through this presence, we continue to build partnerships, embrace proven practices, and deliver consistent solutions that shape industries. Our companies operate as independent legal entities, united by a common philosophy, quality standards, and leadership vision.",
     heroImage: '/images/seven-spikes/Pics/Expertise/Seven Spikes Building Contracting.avif',
     heroImageAlt: 'Construction and corporate operations',
-    // stats: [
-    //   { value: '10+', label: 'Brand-aligned entities' },
-    //   { value: '2', label: 'Operating jurisdictions' },
-    //   { value: '5+', label: 'Business verticals served' },
-    //   { value: '1', label: 'Integrated group identity' },
-    // ],
+    stats: [
+      { value: '10+', label: 'Brand-aligned entities' },
+      { value: '2', label: 'Operating jurisdictions' },
+      { value: '5+', label: 'Business verticals served' },
+      { value: '1', label: 'Integrated group identity' },
+    ],
     cards: [
       {
         title: 'Sector Specialization',
@@ -377,6 +377,12 @@ export const navLandingPages: Record<NavLandingSlug, NavLandingPage> = {
       'At Seven Spikes, we deliver comprehensive solutions designed to meet the diverse demands of modern industries. With expertise across multiple sectors, we combine innovation, efficiency, and uncompromising quality to ensure every project is executed to the highest standard.',
     heroImage: '/images/seven-spikes/Pics/Expertise/Road Construction.jpg',
     heroImageAlt: 'Road construction and service delivery',
+    stats: [
+      { value: '5', label: 'Primary service verticals' },
+      { value: 'Multi-Sector', label: 'Integrated delivery model' },
+      { value: 'End-to-End', label: 'Project lifecycle support' },
+      { value: 'Quality-First', label: 'Execution standards' },
+    ],
     cards: [
       {
         title: 'Road Contracting & Infrastructure',
@@ -683,7 +689,7 @@ export const navLandingPages: Record<NavLandingSlug, NavLandingPage> = {
     title: 'Sustainability',
     eyebrow: 'Long-Term Responsibility',
     description:
-      'Seven Spikes approaches sustainability through responsible operations, resilient delivery standards, practical efficiency, and long-term value creation.',
+      'At Seven Spikes, we are committed to integrating sustainable practices across all our business sectors. As a global organization operating in diverse industries, we recognize our responsibility to contribute positively to the environment, society, and the communities in which we operate. Our sustainability strategy is built upon three key pillars: Environmental Responsibility, Social Commitment, and Economic Growth.',
     heroImage: '/images/seven-spikes/Pics/Expertise/Real Estate.avif',
     heroImageAlt: 'Sustainable built environment',
     stats: [
@@ -694,30 +700,37 @@ export const navLandingPages: Record<NavLandingSlug, NavLandingPage> = {
     ],
     cards: [
       {
-        title: 'Responsible Operations',
+        title: 'Environmental Responsibility',
         description:
-          'We value process discipline, controlled execution, and efficient coordination that reduces waste and protects delivery quality.',
+          'We are dedicated to reducing our environmental impact by implementing sustainable practices across our construction, real estate, logistics, and hospitality operations. Our initiatives include energy efficiency through renewable technologies and stronger energy management, waste reduction through recycling and responsible disposal, water conservation through water-saving technologies, and eco-friendly construction using sustainable materials and green design principles.',
       },
       {
-        title: 'Durable Outcomes',
+        title: 'Social Commitment',
         description:
-          'Projects and services should support long-term performance, reliability, and sensible stewardship of resources.',
+          'Our people, partners, and communities are integral to our success. We are committed to employee welfare through a safe, inclusive, and diverse workplace, community engagement through local programs and infrastructure initiatives, and strong health and safety standards across our worksites to protect employees, contractors, and clients.',
       },
       {
-        title: 'People & Standards',
+        title: 'Economic Growth',
         description:
-          'Sustainability also depends on safe, responsible, and accountable ways of working across teams and partners.',
+          'We believe sustainable growth goes hand-in-hand with responsible business practices. Our commitment includes ethical business practices with transparency and accountability, innovation and technology investments that improve efficiency and reduce costs, and long-term partnerships with suppliers, clients, and stakeholders who share our sustainability goals.',
       },
     ],
     spotlight: {
-      eyebrow: 'Our Approach',
-      title: 'Sustainability as a practical operating principle.',
+      eyebrow: 'Our Three Pillars',
+      title: 'Turning sustainability commitments into measurable action.',
       description:
-        'Rather than treating sustainability as a decorative claim, Seven Spikes frames it through long-term thinking, operational efficiency, and disciplined delivery standards.',
+        'Our sustainability framework combines environmental stewardship, social responsibility, and resilient economic growth so each business sector contributes to long-term impact.',
       bullets: [
-        'Better planning and coordination across operational workflows.',
-        'Attention to lifecycle value in built and managed environments.',
-        'Commitment to responsible growth across markets and sectors.',
+        'Energy Efficiency: investing in energy-efficient technologies, renewable energy sources, and stronger energy management across facilities.',
+        'Waste Reduction: minimizing waste through recycling, responsible disposal, and sustainable material choices.',
+        'Water Conservation: implementing water-saving technologies and responsible usage practices.',
+        'Eco-Friendly Construction: applying sustainable materials and green design principles in construction projects.',
+        'Employee Welfare: building a safe, inclusive, and diverse environment where people can thrive.',
+        'Community Engagement: supporting local communities through programs, charitable initiatives, and infrastructure development.',
+        'Health & Safety: enforcing strict worksite safety standards for employees, contractors, and clients.',
+        'Ethical Business Practices: maintaining transparency, integrity, and accountability in operations.',
+        'Innovation & Technology: investing in sustainable innovation to improve efficiency and deliver environmentally conscious solutions.',
+        'Long-Term Partnerships: collaborating with partners and stakeholders who share our sustainability commitment.',
       ],
       image: '/images/seven-spikes/Pics/Clientele/Dubai-Silicon-Oasis-Authority.jpg',
       imageAlt: 'Sustainable urban development context',

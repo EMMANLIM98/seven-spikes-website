@@ -6,6 +6,7 @@ import GalleryLandingPageSection from '@/components/sections/gallery-landing-pag
 import CompaniesLandingPageSection from '@/components/sections/companies-landing-page';
 import LeadershipLandingPageSection from '@/components/sections/leadership-landing-page';
 import ServicesLandingPageSection from '@/components/sections/services-landing-page';
+import SustainabilityLandingPageSection from '@/components/sections/sustainability-landing-page';
 import NavLandingPageSection from '@/components/sections/nav-landing-page';
 import {
   isNavLandingSlug,
@@ -67,6 +68,10 @@ export default async function NavLandingRoute({ params }: PageProps) {
 
   if (slug === 'gallery') {
     return <GalleryLandingPageSection page={navLandingPages[slug]} />;
+  }
+
+  if (slug === 'sustainability') {
+    return <SustainabilityLandingPageSection page={navLandingPages[slug]} />;
   }
 
   return <NavLandingPageSection page={navLandingPages[slug]} />;
