@@ -57,7 +57,7 @@ export default function Header() {
             </button>
 
             <Link
-              href="/signup"
+              href="/contact"
               className="lg:inline-flex items-center px-5 py-3 gradient-btn hidden text-sm text-white rounded-full button-bg h-11"
             >
               Contact Us

@@ -306,7 +306,7 @@ export const navLandingPages: Record<NavLandingSlug, NavLandingPage> = {
     title: 'Our Companies',
     eyebrow: 'Corporate Network',
     description:
-      'The Seven Spikes network brings together specialized entities under one coordinated brand framework, allowing clients to engage targeted expertise with confidence.',
+      "Seven Spikes' global footprint reflects our commitment to delivering excellence and precision worldwide. With a strategic presence across key international markets, we continue to expand our reach to serve diverse industries with reliability and effectiveness. Our extensive network enables us to deliver high-quality operations with cultural awareness, regional expertise, and strategic insights. Through this presence, we continue to build partnerships, embrace proven practices, and deliver consistent solutions that shape industries. Our companies operate as independent legal entities, united by a common philosophy, quality standards, and leadership vision.",
     heroImage: '/images/seven-spikes/Pics/Expertise/Seven Spikes Building Contracting.avif',
     heroImageAlt: 'Construction and corporate operations',
     stats: [
