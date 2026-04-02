@@ -25,7 +25,7 @@ export default function ContactPage() {
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <Label htmlFor="firstName">First Name</Label>
-                  <Input type="text" placeholder="Jhamse" />
+                  <Input type="text" placeholder="Enter your first name" />
                 </div>
                 <div>
                   <Label htmlFor="lastName"> Last Name</Label>
