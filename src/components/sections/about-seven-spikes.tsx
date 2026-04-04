@@ -77,7 +77,7 @@ export default function AboutSevenSpikes() {
                       INTERNATIONAL OPERATIONS
                     </h4>
                     <p className="text-gray-700 dark:text-gray-300 text-sm font-semibold">
-                      Aligned with <span className="font-bold">Seven Spikes Overseas International Services Management L.L.C.</span>
+                      Aligned with <span className="font-bold">Seven Spikes Overseas International Management Services L.L.C.</span>
                     </p>
                   </div>
                 </div>
