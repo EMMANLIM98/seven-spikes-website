@@ -35,6 +35,11 @@ export const navItems = [
     href: '/terms',
     label: 'Terms & Conditions',
   },
+  {
+    type: 'link',
+    href: '/faq',
+    label: 'FAQ',
+  },
 ] satisfies NavItem[];
 
 type NavItem = Record<string, string | unknown> &

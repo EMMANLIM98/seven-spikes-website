@@ -13,16 +13,16 @@ export const BILLING_PERIODS = [
 
 const AMOUNTS = {
   free: {
-    monthly: 0,
-    yearly: 0,
+    monthly: 49,
+    yearly: 468,
   },
   plus: {
-    monthly: 15,
-    yearly: 144,
+    monthly: 149,
+    yearly: 1428,
   },
   pro: {
-    monthly: 40,
-    yearly: 384,
+    monthly: 399,
+    yearly: 3828,
   },
   enterprise: {
     monthly: null,
@@ -33,9 +33,9 @@ const AMOUNTS = {
 export type TBILLING_PLAN = (typeof BILLING_PLANS)[number];
 export const BILLING_PLANS = [
   {
-    name: 'Free',
+    name: 'Starter Hosting',
     description:
-      'For hobbyists exploring AI—get started with essential features and a small token allowance.',
+      'For company brochure and corporate sites running Next.js with core performance and security setup.',
     pricing: {
       monthly: {
         amount: AMOUNTS['free']['monthly'],
@@ -49,19 +49,19 @@ export const BILLING_PLANS = [
       },
     },
     features: [
-      'Basic AI model access',
-      'Up to 25,000 tokens / month',
-      'Limited to 3 projects',
-      'No API key support',
-      'Community support only',
+      'Managed Next.js deployment (Vercel-ready)',
+      'SSL, CDN, and DNS setup',
+      'Uptime monitoring and weekly backups',
+      'Basic contact form and anti-spam setup',
+      'Monthly maintenance support',
     ],
-    cta: 'Try it for free',
+    cta: 'Choose Starter',
     popular: false,
   },
   {
-    name: 'Plus plan',
+    name: 'Growth Hosting',
     description:
-      'For developers building real products—higher limits and more flexible usage.',
+      'For business websites that need auth flows, database-backed pages, and API integrations.',
     pricing: {
       monthly: {
         amount: AMOUNTS['plus']['monthly'],
@@ -75,20 +75,20 @@ export const BILLING_PLANS = [
       },
     },
     features: [
-      'Everything in Free',
-      'Up to 250,000 tokens / month',
-      'Unlimited projects',
-      'Bring your own OpenAI API key',
-      'Basic analytics dashboard',
-      'Email support',
+      'Everything in Starter Hosting',
+      'Managed PostgreSQL (Neon/Supabase/Vercel Postgres)',
+      'NextAuth and social sign-in setup',
+      'API routes, cron jobs, and webhook support',
+      'Environment and secret management',
+      'Priority support and faster incident response',
     ],
-    cta: 'Subscribe Now',
+    cta: 'Choose Growth',
     popular: true,
   },
   {
-    name: 'Pro plan',
+    name: 'Scale Hosting',
     description:
-      'For teams and power users who need generous token limits and advanced tooling.',
+      'For high-traffic platforms that require stronger performance, observability, and controlled releases.',
     pricing: {
       monthly: {
         amount: AMOUNTS['pro']['monthly'],
@@ -102,20 +102,20 @@ export const BILLING_PLANS = [
       },
     },
     features: [
-      'Everything in Plus',
-      'Up to 1 million tokens / month',
-      'Advanced model selection (GPT-4, Claude 3)',
-      'Priority support',
-      'Team collaboration tools',
-      'Exportable usage reports',
+      'Everything in Growth Hosting',
+      'Performance tuning for Next.js and caching strategy',
+      'Structured staging and production deployment workflow',
+      'Analytics, logs, and alerting setup',
+      'Security hardening and access controls',
+      'Dedicated technical account support',
     ],
-    cta: 'Subscribe Now',
+    cta: 'Choose Scale',
     popular: false,
   },
   {
-    name: 'Enterprise',
+    name: 'Enterprise Infrastructure',
     description:
-      'Tailored for companies with high-volume needs and advanced security.',
+      'Tailored cloud architecture for multi-region reliability, strict compliance, and enterprise governance.',
     pricing: {
       monthly: {
         amount: AMOUNTS['enterprise']['monthly'],
@@ -129,13 +129,13 @@ export const BILLING_PLANS = [
       },
     },
     features: [
-      'Everything in Pro',
-      'Unlimited tokens',
-      'Dedicated AI instance (optional)',
-      'SLA-backed support (24/7)',
-      'SSO & audit logging',
+      'Everything in Scale Hosting',
+      'Custom cloud architecture and migration plan',
+      'SLA-backed support with 24/7 escalation',
+      'Disaster recovery and business continuity planning',
+      'Advanced compliance controls and audit trails',
     ],
-    cta: 'Contact sales',
+    cta: 'Talk to Enterprise Team',
     popular: false,
   },
 ];

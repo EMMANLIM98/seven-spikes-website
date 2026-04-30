@@ -32,7 +32,7 @@ const companyGroups: CompanyGroup[] = [
         name: 'Seven Spikes Road Contracting L.L.C.',
         description:
           'Seven Spikes Road Contracting is a leader in road construction services, providing road marking, crack sealant application, and AI integration to enhance road safety and durability. Its solutions are designed to meet modern infrastructure standards.',
-        href: '/contact',
+        href: '/companies/road-contracting-llc',
         logoSrc: '/images/seven-spikes/Logos/PNG/SSRC-PNG.png',
         logoAlt: 'Seven Spikes Road Contracting logo',
       },
@@ -40,7 +40,7 @@ const companyGroups: CompanyGroup[] = [
         name: 'Seven Spikes Building Contracting L.L.C.',
         description:
           'Seven Spikes Building Contracting offers complete building construction solutions, covering residential, commercial, and industrial projects. The company also specializes in facility management services, ensuring smooth operations and maintenance of built environments.',
-        href: '/contact',
+        href: '/companies/building-contracting-llc',
         logoSrc: '/images/seven-spikes/Logos/PNG/SSBC-PNG.png',
         logoAlt: 'Seven Spikes Building Contracting logo',
       },
@@ -48,7 +48,7 @@ const companyGroups: CompanyGroup[] = [
         name: 'Seven Spikes General Trading L.L.C.',
         description:
           'This division focuses on providing reliable general trading and logistics solutions. The company sources and supplies a wide range of products across multiple industries while ensuring efficient distribution and supply chain management.',
-        href: '/contact',
+        href: '/companies/general-trading-llc',
         logoSrc: '/images/seven-spikes/Logos/PNG/SSGT-PNG.png',
         logoAlt: 'Seven Spikes General Trading logo',
       },
@@ -56,7 +56,7 @@ const companyGroups: CompanyGroup[] = [
         name: 'Al Safa Road Contracting L.L.C.',
         description:
           'Al Safa Road Contracting specializes in road construction and infrastructure works. The company excels in building durable roads, highways, and access routes. With a strong focus on safety and quality, its services also include comprehensive road maintenance.',
-        href: '/contact',
+        href: '/companies/al-safa-road-contracting-llc',
         logoSrc: '/images/seven-spikes/Logos/PNG/ASRC.png',
         logoAlt: 'Al Safa Road Contracting logo',
       },
@@ -64,7 +64,7 @@ const companyGroups: CompanyGroup[] = [
         name: 'Seven Spikes Asphalt Manufacturing L.L.C.',
         description:
           'Seven Spikes Asphalt Manufacturing is an industrial company established to develop asphalt mix manufacturing operations for road construction and infrastructure applications, supporting the Seven Spikes brand ecosystem with dedicated production capabilities.',
-        href: '/contact',
+        href: '/companies/asphalt-manufacturing-llc',
         logoSrc: '/images/seven-spikes/Logos/PNG/SSAM-PNG.png',
         logoAlt: 'Seven Spikes Asphalt Manufacturing logo',
       },
@@ -78,7 +78,7 @@ const companyGroups: CompanyGroup[] = [
         name: 'Seven Spikes Construction, Tourism, Real Estate, and Trading Ltd. Turkey',
         description:
           'This branch combines expertise in real estate, hospitality, and building works with general trading services. It plays a key role in property development, offering turnkey solutions that cater to the tourism and commercial sectors.',
-        href: '/contact',
+        href: '/companies/construction-tourism-real-estate-trading-turkey',
         logoSrc: '/images/seven-spikes/Logos/PNG/SST-PNG.png',
         logoAlt: 'Seven Spikes Turkey logo',
       },
@@ -86,7 +86,7 @@ const companyGroups: CompanyGroup[] = [
         name: 'Seven Spikes Road Contracting, Jordan',
         description:
           'This entity specializes in consultancy and logistics services. It provides expert guidance for businesses, helping them streamline operations, improve strategies, and optimize logistics for better efficiency.',
-        href: '/contact',
+        href: '/companies/road-contracting-jordan',
         logoSrc: '/images/seven-spikes/Logos/PNG/SSJ-PNG.png',
         logoAlt: 'Seven Spikes Jordan logo',
       },
@@ -94,7 +94,7 @@ const companyGroups: CompanyGroup[] = [
         name: 'Seven Spikes Consultancy Pvt. Ltd. India',
         description:
           'Specializing in creative solutions, this branch offers design services along with expertise in the designing, retail, and hospitality sectors.',
-        href: '/contact',
+        href: '/companies/consultancy-india',
         logoSrc: '/images/seven-spikes/Logos/PNG/SSC-PNG.png',
         logoAlt: 'Seven Spikes Consultancy logo',
       },
@@ -102,7 +102,7 @@ const companyGroups: CompanyGroup[] = [
         name: 'Seven Spikes Contracting L.L.C., Oman',
         description:
           'Expanding our road and infrastructure expertise to Oman. We focus on delivering durable, high-standard construction solutions for roads and civil works throughout the Sultanate.',
-        href: '/contact',
+        href: '/companies/contracting-oman',
         logoSrc: '/images/seven-spikes/Logos/PNG/SSCH-PNG.png',
         logoAlt: 'Seven Spikes Contracting logo',
       },
