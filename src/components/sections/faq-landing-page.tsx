@@ -229,9 +229,9 @@ export default function FaqLandingPage() {
                             }`}
                           >
                             {isActive ? (
-                              <MinusIcon className="w-3.5 h-3.5" />
+                              <MinusIcon />
                             ) : (
-                              <PlusIcon className="w-3.5 h-3.5" />
+                              <PlusIcon />
                             )}
                           </span>
                         </button>
