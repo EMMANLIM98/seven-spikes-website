@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { MinusIcon, PlusIcon } from "@/icons/icons";
 import Link from "next/link";
 
@@ -8,7 +8,7 @@ interface FAQItem {
   id: number;
   category: string;
   question: string;
-  answer: string;
+  answer: React.ReactNode;
 }
 
 const ALL_FAQS: FAQItem[] = [
@@ -18,91 +18,108 @@ const ALL_FAQS: FAQItem[] = [
     category: "General",
     question: "What is Seven Spikes Group?",
     answer:
-      "Place Holder",
+      "Seven Spikes Group is a diversified conglomerate with a presence in various industries, including Roads & Infrastructure, Building Construction, Facilities Management, Real Estate, Hospitality, General Trading, Logistics, and Consultancy.",
   },
   {
     id: 2,
     category: "General",
-    question: "Where is Seven Spikes Group based?",
+    question: "Where is the company headquartered?",
     answer:
-      "Place Holder",
+      "The group is headquartered in Dubai, UAE, at the SIT Tower in Dubai Silicon Oasis.",
   },
   {
     id: 3,
     category: "General",
-    question: "How many companies are under Seven Spikes Group?",
+    question: "In which countries does Seven Spikes operate?",
     answer:
-      "Place Holder",
+      "Beyond the UAE, the group has a global footprint with operations in Turkey, India, Jordan, and Oman.",
   },
-  // Category 1
+  // Services
   {
     id: 4,
-    category: "Category 1",
-    question: "Question Place Holder",
+    category: "Services",
+    question: "What infrastructure services do you offer?",
     answer:
-      "Place Holder",
+      "Our Infrastructure & Road Contracting division provides comprehensive solutions, including road construction and rehabilitation, road marking, signage installation, crack sealing, street lighting, and emergency road repairs.",
   },
   {
     id: 5,
-    category: "Category 1",
-    question: "Question Place Holder",
+    category: "Services",
+    question: "Do you provide building construction and management?",
     answer:
-      "Place Holder",
+      "Yes, Seven Spikes Building Contracting handles residential, commercial, and industrial projects. We also offer Facility Management & Maintenance and high-end Interior Fit-outs.",
   },
   {
     id: 6,
-    category: "Category 1",
-    question: "Question Place Holder",
-    answer:
-      "Place Holder",
+    category: "Services",
+    question: "What products are available through your trading division?",
+    answer: (
+      <span>
+        Seven Spikes General Trading L.L.C. sources and supplies a wide variety of materials:
+        <ul className="mt-2 space-y-1 list-none">
+          <li><span className="font-semibold text-gray-700 dark:text-gray-300">Construction & MEP:</span> Building tools, cement, pipes, fittings, and HVAC accessories.</li>
+          <li><span className="font-semibold text-gray-700 dark:text-gray-300">Safety & Traffic:</span> Cones, barricades, and asphalt crack sealants.</li>
+          <li><span className="font-semibold text-gray-700 dark:text-gray-300">Specialized Goods:</span> Solar panels, landscaping products, and joinery materials.</li>
+        </ul>
+      </span>
+    ),
   },
-  // Category 2
   {
     id: 7,
-    category: "Category 2",
-    question: "Question Place Holder",
+    category: "Services",
+    question: "Do you offer business consultancy?",
     answer:
-      "Place Holder",
+      "Yes, we provide strategic insights through Consultancy Services, including project planning, market research, feasibility studies, and business development solutions.",
   },
+  // About
   {
     id: 8,
-    category: "Category 2",
-    question: "Question Place Holder",
+    category: "About",
+    question: "What is the company's approach to sustainability?",
     answer:
-      "Place Holder",
+      "We are committed to sustainable growth and responsible business practices, focusing on delivering infrastructure that connects communities while minimizing environmental impact.",
   },
+  // Contact & Partnerships
   {
     id: 9,
-    category: "Category 2",
-    question: "Question Place Holder",
+    category: "Contact & Partnerships",
+    question: "How can I partner with or request a quote from Seven Spikes?",
     answer:
-      "Place Holder",
+      "For project inquiries or trading requirements, you can contact our headquarters at +971 4 336 4991 or visit the Contact page on our website to submit a query.",
   },
-  // Category 3
+  // Careers
   {
     id: 10,
-    category: "Category 3",
-    question: "Question Place Holder",
+    category: "Careers",
+    question: "How can I apply for a job at Seven Spikes Group?",
     answer:
-      "Place Holder",
+      "Interested candidates should email their updated CV and a brief introduction to our HR team. Ensure you specify the role you are applying for in the subject line.",
   },
   {
     id: 11,
-    category: "Category 3",
-    question: "Question Place Holder",
+    category: "Careers",
+    question: "What is the company culture like?",
     answer:
-      "Place Holder",
+      "We foster a collaborative and inclusive culture where teamwork and continuous learning are central to our success. We believe in nurturing talent and providing an environment where professionals can grow alongside the business.",
   },
   {
     id: 12,
-    category: "Category 3",
-    question: "Question Place Holder",
-    answer:
-      "Place Holder",
+    category: "Careers",
+    question: "What types of roles do you typically hire for?",
+    answer: (
+      <span>
+        As a diversified group, we frequently have openings across several sectors:
+        <ul className="mt-2 space-y-1 list-none">
+          <li><span className="font-semibold text-gray-700 dark:text-gray-300">Infrastructure & Construction:</span> Planning Engineers, Site Engineers, Surveyors, Foremen, and HSE Engineers.</li>
+          <li><span className="font-semibold text-gray-700 dark:text-gray-300">Technical & MEP:</span> Electrical Engineers and specialized operators (e.g., Bobcat, JCB, and Roller operators).</li>
+          <li><span className="font-semibold text-gray-700 dark:text-gray-300">Administrative & Support:</span> Document Controllers, Estimators, and Time Keepers.</li>
+        </ul>
+      </span>
+    ),
   },
 ];
 
-const CATEGORIES = ["All", "General", "Category 1", "Category 2", "Category 3"];
+const CATEGORIES = ["All", "General", "Services", "About", "Contact & Partnerships", "Careers"];
 
 export default function FaqLandingPage() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -238,9 +255,9 @@ export default function FaqLandingPage() {
                         {isActive && (
                           <div className="px-6 pb-5">
                             <div className="h-px bg-gray-100 dark:bg-gray-700/50 mb-4" />
-                            <p className="text-gray-600 dark:text-gray-400 text-sm md:text-[15px] leading-relaxed">
+                            <div className="text-gray-600 dark:text-gray-400 text-sm md:text-[15px] leading-relaxed">
                               {item.answer}
-                            </p>
+                            </div>
                           </div>
                         )}
                       </div>
